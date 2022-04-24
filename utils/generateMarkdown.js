@@ -10,9 +10,9 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
+//function to generate markdown for README
 function generateMarkdown(readmeData) {
-  return `# ${data.title}
+  return `# ${readmeData.title}
 
   ## Description
   ${readmeData.description}
@@ -47,7 +47,6 @@ function generateMarkdown(readmeData) {
   ## Contact
   * Email: ${readmeData.email}
   * [GitHub](https://github.com/${readmeData.github})
-
 `;
 }
 

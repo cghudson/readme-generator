@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+//packages needed for this application
 const fs = require('fs')
 const inquirer = require('inquirer')
 const generateReadme = require('./utils/generateMarkdown')
 
-// TODO: Create an array of questions for user input
+//array of questions for user input
 const promptUser = () => {
     return inquirer.prompt([
         {
@@ -63,10 +63,11 @@ const promptUser = () => {
             name: 'license',
             message: 'Please select the appropriate license for this project:',
             choices: [
-                'Apache',
+                'Apache 2.0',
                 'GNU',
                 'MIT',
-                'Mozilla'
+                'Mozilla',
+                'None'
             ]
         },
         {
@@ -83,10 +84,16 @@ const promptUser = () => {
             }
         },
         {
-            type: 'confirm',
+            type: 'input',
             name: 'test',
             message: 'Is there a test included?',
-            default: false
+            validate: testInput => {
+                if (testInput) {
+                    return true;
+                } else {
+                    return false
+                }
+            }
         },
         {
             type: 'input',
@@ -130,19 +137,19 @@ const promptUser = () => {
     ])
 };
 
-// TODO: Create a function to write README file
+//function to write README file
 const writeFile = readmeData => {
     fs.writeFile('README.md', readmeData, err => {
         if(err) {
             console.log(err)
             return
         } else {
-            console.log("Your README file has been successfully created!")
+            console.log("Your README file has been created!")
         }
     })
 }
 
-// TODO: Create a function to initialize app
+//function to initialize app
 promptUser()
 .then(input => {
     return generateReadme(input);
@@ -154,5 +161,3 @@ promptUser()
     console.log(err)
 })
 
-// Function call to initialize app
-// init();
