@@ -35,7 +35,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'installation',
-            message: 'Please provide instructions for installing the project:',
+            message: 'What command is used to instal your project:',
             validate: installationInput => {
                 if (installationInput) {
                   return true;
@@ -59,11 +59,11 @@ const promptUser = () => {
             }
         },
         {
-            type: 'checkbox',
+            type: 'list',
             name: 'license',
             message: 'Please select the appropriate license for this project:',
             choices: [
-                'Apache 2.0',
+                'Apache2.0',
                 'GNU',
                 'MIT',
                 'Mozilla',
@@ -86,7 +86,8 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'test',
-            message: 'Is there a test included?',
+            message: 'What command should be run for testing purposes?',
+            default: 'npm test',
             validate: testInput => {
                 if (testInput) {
                     return true;
@@ -117,19 +118,6 @@ const promptUser = () => {
                   return true;
                 } else {
                   console.log('Please enter your email address!');
-                  return false;
-                }
-            }
-        },
-        {
-            type: 'input',
-            name: 'issue',
-            message: 'Please provide instructions to reach you if there are questions about your project:',
-            validate: issueInput => {
-                if (issueInput) {
-                  return true;
-                } else {
-                  console.log('Please let users know how to contact you in the event of issues or questions');
                   return false;
                 }
             }
