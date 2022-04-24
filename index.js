@@ -143,7 +143,16 @@ const writeFile = readmeData => {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+promptUser()
+.then(input => {
+    return generateReadme(input);
+})
+.then(readmeData => {
+    return writeFile(readmeData)
+})
+.catch(err => {
+    console.log(err)
+})
 
 // Function call to initialize app
-init();
+// init();
