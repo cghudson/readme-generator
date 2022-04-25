@@ -1,50 +1,48 @@
-# dsgfsd
-  ![GitHub License](https://img.shields.io/badge/License-Apache2.0-green)
+# README Generator
+  ![GitHub License](https://img.shields.io/badge/License-MIT-green)
 
   ## Description
 
-  sdfg
+  This project allows users to quickly generate a professional README from the command-line using Node.js. The user is prompted to input information about the application respository which is displayed in the generated README upon completion. The generated README includes a title, description, table of contents, installation instructions, usage information, contribution guidelines, licensing information, test instructions, and contact information for the project creator. The chosen license for the project is displayed in a badge near the top of the README. 
 
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
-  * [Contributors](#contributors)
+  * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
-  * [Contact](#contact)
   
   ## Installation
 
-  To run any necessary installations use th following command:
+  To run any necessary installations use the following command:
 
 ```
-  dsfg
+  npm install
 ```
 
   ## Usage
 
-  dsfg
+  The purpose of this project is to allow users to quickly generate a professional README.
 
   ## License
 
-   This application is licensed under the Apache2.0 license.
+   This application is licensed under MIT.
    
+  ## Contributing
 
-  ## Contributors
-
-  sdfg
+  placeholder
 
   ## Tests
   
-  To run any necessary test use th following command:
+  To run any necessary test, use the following command:
 
 ```
-  sdfg
+  npm test
 ```
 
   ## Questions
 
-If you have any questions about this project please email directly at [dfgsdfg](mailto:dfgsdfg) .
+If you have any questions about this project please email me directly at [cghudson@uwalumni.com](mailto:cghudson@uwalumni.com) .
 
-Check out more of my projects here: [dfg](https://github.com/dfg)
+View more of my projects here: [cghudson](https://github.com/cghudson)

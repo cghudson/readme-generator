@@ -27,7 +27,7 @@ function renderLicenseSection(license) {
   } else {
     return `  ## License
 
-   This application is licensed under the ${license} license.
+   This application is licensed under ${license}.
    `
   }
 }
@@ -48,7 +48,6 @@ ${renderLicenseLink(readmeData.license)}
   * [Contributors](#contributors)
   * [Tests](#tests)
   * [Questions](#questions)
-  * [Contact](#contact)
   
   ## Installation
 
@@ -78,9 +77,9 @@ ${renderLicenseSection(readmeData.license)}
 
   ## Questions
 
-If you have any questions about this project please email directly at [${readmeData.email}](mailto:${readmeData.email}) .
+If you have any questions about this project please email me directly at [${readmeData.email}](mailto:${readmeData.email}) .
 
-Check out more of my projects here: [${readmeData.github}](https://github.com/${readmeData.github})
+View more of my projects here: [${readmeData.github}](https://github.com/${readmeData.github})
 `;
 }
 

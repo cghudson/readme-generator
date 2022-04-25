@@ -73,12 +73,12 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'contribute',
-            message: 'Who are the contributors of this project?',
+            message: 'Please provide instructions or guidelines for other developers to contribute to this project:',
             validate: contributeInput => {
                 if (contributeInput) {
                   return true;
                 } else {
-                  console.log('Please enter project contributors!');
+                  console.log('Please enter guidelines for contributions!');
                   return false;
                 }
             }
