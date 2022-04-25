@@ -79,7 +79,7 @@ ${renderLicenseSection(readmeData.license)}
 
 If you have any questions about this project please email me directly at [${readmeData.email}](mailto:${readmeData.email}) .
 
-View more of my projects here: [${readmeData.github}](https://github.com/${readmeData.github})
+View more of my projects on [GitHub](https://github.com/${readmeData.github}).
 `;
 }
 

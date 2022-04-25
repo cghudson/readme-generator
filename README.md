@@ -45,4 +45,4 @@
 
 If you have any questions about this project please email me directly at [cghudson@uwalumni.com](mailto:cghudson@uwalumni.com) .
 
-View more of my projects here: [cghudson](https://github.com/cghudson)
+View more of my projects on [GitHub](https://github.com/cghudson).
