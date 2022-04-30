@@ -3,7 +3,7 @@
 
   ## Description
 
-  This project allows users to quickly generate a professional README from the command-line using Node.js. The user is prompted to input information about the application respository which is displayed in the generated README upon completion. The generated README includes a title, description, table of contents, installation instructions, usage information, contribution guidelines, licensing information, test instructions, and contact information for the project creator. The chosen license for the project is displayed in a badge near the top of the README. 
+  This project allows users to quickly generate a professional README from the command-line using Node.js. The user is prompted to input information about the application repository, which will be displayed in the generated README upon completion. The generated README includes a title, description, table of contents, installation instructions, usage information, contribution guidelines, licensing information, test instructions, and contact information for the project creator. The chosen license for the project is displayed in a badge near the top of the README. 
 
   ## Table of Contents
   * [Installation](#installation)
@@ -23,7 +23,13 @@
 
   ## Usage
 
-  The purpose of this project is to allow users to quickly generate a professional README.
+  The purpose of this project is to allow users to quickly generate a professional README using the command line.
+
+  ## Preview:
+
+  The following GIF demonstrates the README Generator's appearance and functionality:
+
+  ![GIF of README Generator](./images/exampleREADME.gif)
 
   ## License
 
@@ -31,14 +37,20 @@
    
   ## Contributing
 
-  placeholder
+  Contributions are welcome! See below for instructions:
+
+  1. **Fork** the repository on GitHub.
+  2. **Clone** the project to your device.
+  3. **Commit** changes to your own branch.
+  4. **Push** the changes to your fork.
+  5. Submit a **Pull request** so that the changes can be reviewed!
 
   ## Tests
   
   To run any necessary test, use the following command:
 
 ```
-  npm test
+  **No tests required at this time.
 ```
 
   ## Questions
